@@ -1,0 +1,71 @@
+.header1{
+    width: 40%;
+    position: relative;
+}
+/* .mat-slider-horizontal{
+    height: 50px;
+    min-width: 63px;
+} */
+.type1{
+    margin-left: 20px;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+    padding-right: 16px;
+  }
+ 
+ body{
+     background-color:white;
+     /*background-image: url('../assets/images/images.png');
+     background-image: url('../assets/images/download.jpg');
+     background-repeat: no-repeat;*/
+    
+
+     /* background-image: url(".\assets\images.png"); */
+     /* background-image: url(".\assets\images\images.png"); */
+  }
+
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  
+  .example-container {
+    width: 500px;
+    height: 400px;
+    border: 1px solid yellowgreen;
+   /* background-image: url('../assets/images/black-curve-banner-background.png');*/
+    background-color:seashell;
+
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: sandybrown;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+    background-color:rgb(172, 168, 115);
+  }
+  

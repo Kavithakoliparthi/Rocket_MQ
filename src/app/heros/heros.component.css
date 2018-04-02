@@ -1,0 +1,50 @@
+.example-button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .example-container {
+    width: 1320px;
+    height: 450px;
+    margin: 10px;
+    border: 1px solid #8a2be2;
+    background-color:black;
+    background-image: url("F:\Angular\part2\src\assets\images\aaaa.gif");
+    background-position:x;
+   
+    background-size: 210mm;
+    background-repeat: no-repeat;
+  }
+ 
+  .example-container {
+    width: 1320px;
+    height: 450px;
+    margin: 10px;
+    border: 1px solid blueviolet;
+   
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items:Left;
+    justify-content: center;
+   
+   
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+    background-color:mediumpurple;
+    
+  }
+  
+
+  .demo-tab-group {
+    border: 1px solid #e8e8e8;
+  }
+  
+  .demo-tab-content {
+    padding: 16px;
+  }
+  

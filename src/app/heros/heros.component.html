@@ -1,0 +1,257 @@
+<mat-toolbar>
+        <mat-icon>home</mat-icon><h1>Home</h1>
+
+
+        
+
+
+
+
+
+
+              
+
+
+
+
+    
+<div class="button-row">
+
+  <button mat-button color="primary">Primary</button>
+  <button mat-button color="accent">Accent</button>
+
+
+  
+
+
+
+
+
+
+  <button mat-button color="primary">About us</button>
+  <button mat-button color="accent">Accent</button>
+  
+  <button mat-button color="primary">Primary</button>
+  <button mat-button color="accent">Accent</button>
+  
+  <a mat-button routerLink=".">Link</a>
+
+  <button mat-button [matMenuTriggerFor]="animals">Student</button>
+
+  <mat-menu #animals="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="vertebrates">Current Batches</button>
+    <button mat-menu-item [matMenuTriggerFor]="invertebrates">Materials</button>
+  </mat-menu>
+  
+  <mat-menu #vertebrates="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
+    <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button>
+    <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
+    <button mat-menu-item>Birds</button>
+    <button mat-menu-item>Mammals</button>
+  </mat-menu>
+  
+  <mat-menu #invertebrates="matMenu">
+    <button mat-menu-item>Insects</button>
+    <button mat-menu-item>Molluscs</button>
+    <button mat-menu-item>Crustaceans</button>
+    <button mat-menu-item>Corals</button>
+    <button mat-menu-item>Arachnids</button>
+    <button mat-menu-item>Velvet worms</button>
+    <button mat-menu-item>Horseshoe crabs</button>
+  </mat-menu>
+  
+  <mat-menu #fish="matMenu">
+    <button mat-menu-item>Baikal oilfish</button>
+    <button mat-menu-item>Bala shark</button>
+    <button mat-menu-item>Ballan wrasse</button>
+    <button mat-menu-item>Bamboo shark</button>
+    <button mat-menu-item>Banded killifish</button>
+  </mat-menu>
+  
+  <mat-menu #amphibians="matMenu">
+    <button mat-menu-item>Sonoran desert toad</button>
+    <button mat-menu-item>Western toad</button>
+    <button mat-menu-item>Arroyo toad</button>
+    <button mat-menu-item>Yosemite toad</button>
+  </mat-menu>
+  
+  <mat-menu #reptiles="matMenu">
+    <button mat-menu-item>Banded Day Gecko</button>
+    <button mat-menu-item>Banded Gila Monster</button>
+    <button mat-menu-item>Black Tree Monitor</button>
+    <button mat-menu-item>Blue Spiny Lizard</button>
+    <button mat-menu-item disabled>Velociraptor</button>
+  </mat-menu>
+  
+
+
+
+
+
+
+</div>
+</mat-toolbar>
+
+
+
+
+
+
+
+<!--<mat-drawer-container class="example-container">
+        <mat-drawer mode="side" opened="true">Drawer content</mat-drawer>
+        <mat-drawer-content>Main content
+        </mat-drawer-content>
+      </mat-drawer-container>-->
+
+      <mat-drawer-container class="example-container" autosize >
+            <mat-drawer #drawer class="example-sidenav" mode="side">
+              <p>Auto-resizing sidenav</p>
+              <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+              <button (click)="showFiller = !showFiller" mat-raised-button>
+                 Extra Information
+              </button>
+              <button type="button" mat-button (click)="drawer.toggle()">
+                    Back
+                  </button>
+              
+              
+            </mat-drawer>
+          
+            <div class="example-sidenav-content">
+              <button type="button" mat-button (click)="drawer.toggle()">
+              Today Alert
+              </button>
+            </div>
+          
+          </mat-drawer-container>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Personal Details
+            </mat-panel-title>
+            <mat-panel-description>
+              Type your name age and sex
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+      
+          <mat-form-field>
+            <input matInput placeholder="First name">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Last name">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Age">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="sex">
+          </mat-form-field>
+        </mat-expansion-panel>
+
+
+
+        <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Address Details
+                </mat-panel-title>
+                <mat-panel-description>
+                  Type your Permanent and Local Address
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+          
+              <mat-form-field>
+                <input matInput placeholder="Parmanent Address">
+              </mat-form-field>
+          
+              <mat-form-field>
+                <input matInput placeholder="Local Address">
+              </mat-form-field>
+            </mat-expansion-panel>
+
+
+
+
+
+
+
+            <mat-accordion>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Educations Details
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      Enter Qualification details
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+              
+                  <mat-form-field>
+                    <input matInput placeholder="10th">
+                  </mat-form-field>
+        
+                  <mat-form-field>
+                    <input matInput placeholder="12th">
+                  </mat-form-field>
+              
+                  <mat-form-field>
+                    <input matInput placeholder="Graduation">
+                  </mat-form-field>
+        
+                  <mat-form-field>
+                    <input matInput placeholder="Post Graduation">
+                  </mat-form-field>
+                </mat-expansion-panel>
+        
+
+
+
+
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Self aware panel
+        </mat-panel-title>
+        <mat-panel-description>
+          Currently I am {{panelOpenState ? 'open' : 'closed'}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>I'm visible because I am open</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+  
+
+
+
+
+
+  

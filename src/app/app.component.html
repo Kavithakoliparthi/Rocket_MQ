@@ -1,0 +1,345 @@
+<!--
+<div>
+<mat-accordion>
+
+  <mat-expansion-panel class="header1">
+    <mat-expansion-panel-header class="header2">
+      <mat-panel-title>
+        Agitators
+       </mat-panel-title>   
+      <mat-panel-description>
+        <!-- <mat-checkbox></mat-checkbox> 
+       <input type="checkbox" aria-expanded="false"/>
+      </mat-panel-description>
+   </mat-expansion-panel-header>
+
+   <mat-slider class="mat-slider-horizontal"></mat-slider>
+   <label>CentrifugalCompressor</label>
+   
+      <mat-radio-group>
+          <mat-radio-button  class= "radi1" value="1"></mat-radio-button>
+      </mat-radio-group>
+ </mat-expansion-panel>
+</mat-accordion> <input type="checkbox" aria-expanded="false"/>
+</div>
+
+<mat-accordion>
+ <mat-expansion-panel class="header1">
+    <mat-expansion-panel-header class="header2">
+        <mat-panel-title>
+          HeaviOil
+         </mat-panel-title>   
+        <mat-panel-description>
+          <mat-checkbox></mat-checkbox>
+        </mat-panel-description>
+     </mat-expansion-panel-header>
+     <mat-slider></mat-slider>
+   <label>ReceprocatingCompressor</label>
+   
+      <mat-radio-group>
+          <mat-radio-button  class= "radi1" value="1"></mat-radio-button>
+      </mat-radio-group>
+ </mat-expansion-panel>
+</mat-accordion>
+<mat-accordion>
+ <mat-expansion-panel class="header1">
+  <mat-expansion-panel-header class="header2">
+      <mat-panel-title>
+        ConventionalGas
+       </mat-panel-title>   
+      <mat-panel-description>
+        <mat-checkbox></mat-checkbox>
+      </mat-panel-description>
+   </mat-expansion-panel-header>
+   <mat-slider class="mat-slider-horizontal"></mat-slider>
+ <label>Agitatoe(flate-BladePaddle)</label>
+ 
+    <mat-radio-group>
+        <mat-radio-button  class= "radi1" value="1"></mat-radio-button>
+    </mat-radio-group>
+</mat-expansion-panel>
+</mat-accordion>
+<mat-accordion>
+<mat-expansion-panel class="header1">
+  <mat-expansion-panel-header class="header2">
+      <mat-panel-title>
+        Compressor
+       </mat-panel-title>   
+      <mat-panel-description>
+        <mat-checkbox></mat-checkbox>
+      </mat-panel-description>
+   </mat-expansion-panel-header>
+   <mat-slider class="mat-slider-horizontal"></mat-slider>
+ <label>CompressorandSilencer</label>
+ 
+    <mat-radio-group>
+        <mat-radio-button  class= "radi1" value="1">one</mat-radio-button>
+    </mat-radio-group>
+</mat-expansion-panel>
+</mat-accordion>
+<mat-accordion>
+<mat-expansion-panel class="header1">
+  <mat-expansion-panel-header class="header2">
+      <mat-panel-title>
+        Others
+       </mat-panel-title>   
+      <mat-panel-description>
+        <mat-checkbox></mat-checkbox>
+      </mat-panel-description>
+   </mat-expansion-panel-header>
+   
+   <div>
+      <mat-slider class="mat-slider-horizontal"></mat-slider>
+      <label>Compressor</label> 
+      <input type="radio" name="name" style="margin-left:180px">
+      
+   </div>
+   <div>
+    <mat-slider class="mat-slider-horizontal"></mat-slider>
+    <label>PipeLine</label>
+    <label>
+      <input type="radio" name="name" class="type1" style="margin-left:199px">
+  </label>
+   </div>
+   <div>
+    <mat-slider class="mat-slider-horizontal"></mat-slider>
+    <label>Boundary</label>
+    <input type="radio" name="name" style="margin-left:192px">
+   </div>
+   <div>
+    <mat-slider class="mat-slider-horizontal"></mat-slider>
+    <label>PropertionalFeeder(RotaryVave)</label>
+    <input type="radio" name="name" style="margin-left:50px">
+   </div>
+   
+    <!-- <mat-radio-group>
+        <mat-radio-button labelPosition='aria-label' class= "radi1" value="1"></mat-radio-button>
+        <mat-radio-button  class= "radi1" value="2"></mat-radio-button>
+        <mat-radio-button  class= "radi1" value="3"></mat-radio-button>
+        <mat-radio-button  class= "radi1" value="4"></mat-radio-button>
+    </mat-radio-group> -->
+    <!-- <mat-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason">
+      <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+          {{season}}
+      </mat-radio-button>
+   </mat-radio-group> 
+</mat-expansion-panel>
+</mat-accordion>-->
+
+<app-heros></app-heros>
+<html>
+  <head>
+    
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <body>
+    <!--  <img src="../assets/images/black-curve-banner-background.png" height="100px" width="10000px">
+    
+        
+     
+       
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Email">
+              <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                Please enter a valid email address
+              </mat-error>
+              <mat-error *ngIf="emailFormControl.hasError('required')">
+                Email is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </form>
+
+          <form class="example-form">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Company (disabled)" disabled value="Google">
+              </mat-form-field>
+            
+              <table class="example-full-width" cellspacing="0"><tr>
+                <td><mat-form-field class="example-full-width">
+                  <input matInput placeholder="First name">
+                </mat-form-field></td>
+                <td><mat-form-field class="example-full-width">
+                  <input matInput placeholder=" Last Name ">
+                </mat-form-field></td></tr>
+                <tr>
+                    <td> <mat-radio-group>
+                        Gender <mat-radio-button value="1">Male</mat-radio-button>
+                         <mat-radio-button value="2">Female</mat-radio-button>
+                       </mat-radio-group>
+               </td>
+                  </tr> 
+                  
+
+
+              </table>
+            
+              <p>
+   
+                <mat-form-field class="example-full-width">
+                  <textarea matInput placeholder="Address 2"></textarea>
+                </mat-form-field>
+              </p>
+            
+              <table class="example-full-width" cellspacing="0"><tr>
+                <td><mat-form-field class="example-full-width">
+                  <input matInput placeholder="City">
+                </mat-form-field></td>
+                <td><mat-form-field class="example-full-width">
+                  <input matInput placeholder="State">
+                </mat-form-field></td>
+                <td><mat-form-field class="example-full-width">
+                  <input matInput #postalCode maxlength="5" placeholder="Postal Code" value="94043">
+                  <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+                </mat-form-field></td>
+              </tr></table>
+
+              <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Email">
+                  <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                    Please enter a valid email address
+                  </mat-error>
+                  <mat-error *ngIf="emailFormControl.hasError('required')">
+                    Email is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field>
+
+                <tr>
+                    <td>
+               </td>
+                  </tr> 
+
+                <tr>
+                    <td>Skills <mat-checkbox>Java</mat-checkbox>
+                      <mat-checkbox>.Net</mat-checkbox>
+                      <mat-checkbox>Phython</mat-checkbox>
+                      <mat-checkbox>Ruby on Rails</mat-checkbox>
+                                  
+               </td>
+                  </tr> 
+
+
+
+            </form>-->
+            
+         
+            <mat-drawer-container class="example-container" autosize>
+
+              
+
+
+                <form class="example-form">
+                    
+                    <div class="example-sidenav-content" aling='left'>
+                       <div> <h1>Registration Details</h1></div>
+                        <button type="button" mat-button (click)="drawer.toggle()">
+                          Help
+                        </button>
+                        
+                      </div>
+                      
+                  
+                    <table class="example-full-width" cellspacing="0"><tr>
+                      <td><mat-form-field class="example-full-width">
+                        <input matInput placeholder="First name">
+                      </mat-form-field></td>
+                      <td><mat-form-field class="example-full-width">
+                        <input matInput placeholder=" Last Name ">
+                      </mat-form-field></td></tr>
+                      <tr>
+                          <td> <mat-radio-group>
+                              Gender <mat-radio-button value="1">Male</mat-radio-button>
+                               <mat-radio-button value="2">Female</mat-radio-button>
+                             </mat-radio-group>
+                     </td>
+                        </tr> 
+                        
+      
+      
+                    </table>
+                  
+                    <p>
+         
+                      <mat-form-field class="example-full-width">
+                        <textarea matInput placeholder="Address 2"></textarea>
+                      </mat-form-field>
+                    </p>
+                  
+                    <table class="example-full-width" cellspacing="0"><tr>
+                      <td><mat-form-field class="example-full-width">
+                        <input matInput placeholder="City">
+                      </mat-form-field></td>
+                      <td><mat-form-field>
+                          <mat-select placeholder="State">
+                            <mat-option>None</mat-option>
+                            <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+                          </mat-select>
+                        </mat-form-field></td>
+                      <td><mat-form-field class="example-full-width">
+                        <input matInput #postalCode maxlength="5" placeholder="Postal Code" value="94043">
+                        <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+                      </mat-form-field></td>
+                    </tr></table>
+      
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Email">
+                        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                          Please enter a valid email address
+                        </mat-error>
+                        <mat-error *ngIf="emailFormControl.hasError('required')">
+                          Email is <strong>required</strong>
+                        </mat-error>
+                      </mat-form-field>
+      
+                      <tr>
+                          <td>
+                     </td>
+                        </tr> 
+      
+                      <tr>
+                          <td>Skills <mat-checkbox>Java</mat-checkbox>
+                            <mat-checkbox>.Net</mat-checkbox>
+                            <mat-checkbox>Phython</mat-checkbox>
+                            <mat-checkbox>Ruby on Rails</mat-checkbox>
+                                        
+                     </td>
+                        </tr> 
+      
+      
+      
+                  </form>
+                  
+
+
+
+
+                <mat-drawer #drawer class="example-sidenav" mode="side">
+                  <p>Student Regestration Details</p>
+                  <p>Email id must be requiread.</p>
+                  <p>2017 passout</p>
+                  <p>Throughout 70%  </p>
+                  <p>Only mail candidate are allowed</p>
+                  <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+                  <button (click)="showFiller = !showFiller" mat-raised-button>
+                    Increage window size
+                  </button>
+                  
+                      
+                       <button type="button" mat-button (click)="drawer.toggle()">
+                         Back
+                       </button>
+                </mat-drawer>
+              
+               
+              
+              </mat-drawer-container>
+              
+
+  </body>
+</html>
+
+
+
+
+
+
